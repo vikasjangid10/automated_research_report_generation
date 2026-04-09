@@ -1,0 +1,2 @@
+{"path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\research_and_analysts\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-08T08:26:27.855477Z", "level": "info", "event": "Configuration loaded successfully"}
+{"timestamp": "2026-04-08T08:26:27.855477Z", "level": "info", "event": "ConfigLoader test run completed successfully"}

@@ -1,0 +1,182 @@
+{"timestamp": "2026-04-15T05:24:57.350909Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2026-04-15T05:24:57.350909Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-15T05:24:57.352267Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-15T05:24:57.352267Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-15T05:24:57.354688Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-15T05:24:57.355686Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-15T05:24:57.355686Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-15T05:24:58.187602Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:24:58.190507Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:24:58.191507Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:24:58.206310Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:24:58.221014Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "topic": "relation between india and USA for tradeoff", "thread_id": "27a82787-6ff6-4506-9a60-90ecfacf8883", "timestamp": "2026-04-15T05:24:58.222020Z", "level": "info", "event": "Starting report pipeline"}
+{"module": "AutonomousReportGenerator", "topic": "relation between india and USA for tradeoff", "timestamp": "2026-04-15T05:24:58.226434Z", "level": "info", "event": "Creating analyst personas"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "count": 3, "timestamp": "2026-04-15T05:25:02.370597Z", "level": "info", "event": "Analysts created"}
+{"timestamp": "2026-04-15T05:25:20.948640Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2026-04-15T05:25:20.949844Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-15T05:25:20.949844Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-15T05:25:20.949844Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-15T05:25:20.953307Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-15T05:25:20.953307Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-15T05:25:20.953307Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-15T05:25:20.954789Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:25:20.954789Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:25:20.955918Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:25:20.969702Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:25:20.984205Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "thread_id": "27a82787-6ff6-4506-9a60-90ecfacf8883", "timestamp": "2026-04-15T05:25:20.987563Z", "level": "info", "event": "Feedback updated"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Priya Nair", "timestamp": "2026-04-15T05:25:20.993779Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Michael Thompson", "timestamp": "2026-04-15T05:25:21.003214Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Li Wei", "timestamp": "2026-04-15T05:25:21.006644Z", "level": "info", "event": "Generating analyst question"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex Carter, an analyst interested in understanding the intricacies of the economic relationship between the USA and India. Thank you for taking the time to speak with me today. \n\nTo start,", "timestamp": "2026-04-15T05:25:22.404463Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:25:22.407446Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex Thompson, an economic analyst with a keen interest in international trade dynamics. I'm eager to learn more about the trade relationship between India and the USA and its broader impli", "timestamp": "2026-04-15T05:25:23.130666Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:25:23.131623Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex Thompson, a fellow analyst interested in understanding the nuances of trade policies between India and the USA. Thank you for taking the time to speak with me today.\n\nTo start, could y", "timestamp": "2026-04-15T05:25:23.266855Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:25:23.267879Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "current investment flows between USA and India 2023 trends", "timestamp": "2026-04-15T05:25:23.525370Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "impact of recent US tariffs on Indian industries sectors affected", "timestamp": "2026-04-15T05:25:24.106687Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "recent trade dynamics between India and USA 2023", "timestamp": "2026-04-15T05:25:24.370532Z", "level": "info", "event": "Performing Tavily web search"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2026-04-15T05:25:27.718843Z", "level": "info", "event": "Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Michael Thompson", "timestamp": "2026-04-15T05:25:27.719843Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2026-04-15T05:25:28.050925Z", "level": "info", "event": "Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Li Wei", "timestamp": "2026-04-15T05:25:28.051821Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2026-04-15T05:25:30.959684Z", "level": "info", "event": "Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Priya Nair", "timestamp": "2026-04-15T05:25:30.961200Z", "level": "info", "event": "Generating expert answer"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: \n\nThe economic relationship between the USA and India is characterized by significant trade and investment flows. In terms of trade, the U.S. goods and services trade with India totaled an est", "timestamp": "2026-04-15T05:25:31.527824Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2026-04-15T05:25:31.532687Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Michael Thompson", "timestamp": "2026-04-15T05:25:31.533929Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: The trade relationship between India and the USA has seen significant growth and evolution over recent years. In 2023, the trade between the two countries continued to strengthen, reflecting a", "timestamp": "2026-04-15T05:25:32.216035Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2026-04-15T05:25:32.217147Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Li Wei", "timestamp": "2026-04-15T05:25:32.218174Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: The recent tariffs imposed by the USA have significantly impacted various Indian industries, particularly those that are export-oriented. The tariffs have affected a wide range of export commo", "timestamp": "2026-04-15T05:25:34.665964Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2026-04-15T05:25:34.666970Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Priya Nair", "timestamp": "2026-04-15T05:25:34.667963Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3859, "timestamp": "2026-04-15T05:25:39.128886Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3929, "timestamp": "2026-04-15T05:25:40.120137Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3725, "timestamp": "2026-04-15T05:25:43.692778Z", "level": "info", "event": "Report section generated successfully"}
+{"module": "AutonomousReportGenerator", "topic": "relation between india and USA for tradeoff", "timestamp": "2026-04-15T05:25:43.698853Z", "level": "info", "event": "Generating conclusion"}
+{"module": "AutonomousReportGenerator", "topic": "relation between india and USA for tradeoff", "timestamp": "2026-04-15T05:25:43.699794Z", "level": "info", "event": "Generating introduction"}
+{"module": "AutonomousReportGenerator", "topic": "relation between india and USA for tradeoff", "timestamp": "2026-04-15T05:25:43.699794Z", "level": "info", "event": "Writing report"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 821, "timestamp": "2026-04-15T05:25:45.573668Z", "level": "info", "event": "Introduction generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 835, "timestamp": "2026-04-15T05:25:46.707922Z", "level": "info", "event": "Conclusion generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:25:51.863246Z", "level": "info", "event": "Report written successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:25:51.866023Z", "level": "info", "event": "Finalizing report compilation"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:25:51.866023Z", "level": "info", "event": "Report finalized"}
+{"module": "AutonomousReportGenerator", "topic": "relation between india and USA for tradeoff", "format": "docx", "timestamp": "2026-04-15T05:25:51.870018Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\generated_report\\relation_between_india_and_USA_for_tradeoff_20260415_105551\\relation_between_india_and_USA_for_tradeoff_20260415_105551.docx", "timestamp": "2026-04-15T05:25:51.943444Z", "level": "info", "event": "Report saved successfully"}
+{"module": "AutonomousReportGenerator", "topic": "relation between india and USA for tradeoff", "format": "pdf", "timestamp": "2026-04-15T05:25:51.943444Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\generated_report\\relation_between_india_and_USA_for_tradeoff_20260415_105551\\relation_between_india_and_USA_for_tradeoff_20260415_105551.pdf", "timestamp": "2026-04-15T05:25:51.956509Z", "level": "info", "event": "Centered PDF saved successfully"}
+{"module": "AutonomousReportGenerator", "path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\generated_report\\relation_between_india_and_USA_for_tradeoff_20260415_105551\\relation_between_india_and_USA_for_tradeoff_20260415_105551.pdf", "timestamp": "2026-04-15T05:25:51.956509Z", "level": "info", "event": "Report saved successfully"}
+{"timestamp": "2026-04-15T05:25:57.267840Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2026-04-15T05:25:57.267840Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-15T05:25:57.267840Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-15T05:25:57.268806Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-15T05:25:57.270799Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-15T05:25:57.270799Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-15T05:25:57.270799Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-15T05:25:57.271803Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:25:57.271803Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:25:57.272984Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:25:57.286143Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:25:57.292461Z", "level": "info", "event": "Report generation graph built successfully"}
+{"timestamp": "2026-04-15T05:26:20.187335Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2026-04-15T05:26:20.188337Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-15T05:26:20.188337Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-15T05:26:20.188337Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-15T05:26:20.191336Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-15T05:26:20.191336Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-15T05:26:20.191336Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-15T05:26:20.192338Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:26:20.192338Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:26:20.194367Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:26:20.204069Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:26:20.214773Z", "level": "info", "event": "Report generation graph built successfully"}
+{"timestamp": "2026-04-15T05:26:34.930023Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2026-04-15T05:26:34.930023Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-15T05:26:34.930023Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-15T05:26:34.931368Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-15T05:26:34.934766Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-15T05:26:34.934766Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-15T05:26:34.934766Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-15T05:26:34.935797Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:26:34.936815Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:26:34.938044Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:26:34.946095Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:26:34.956665Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "thread_id": "27a82787-6ff6-4506-9a60-90ecfacf8883", "timestamp": "2026-04-15T05:26:34.958667Z", "level": "info", "event": "Feedback updated"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Priya Nair", "timestamp": "2026-04-15T05:26:34.967227Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Michael Thompson", "timestamp": "2026-04-15T05:26:34.967227Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Li Wei", "timestamp": "2026-04-15T05:26:34.971933Z", "level": "info", "event": "Generating analyst question"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex Thompson, a journalist with a keen interest in international trade relations. Thank you for taking the time to speak with me today. I'm particularly interested in understanding the nua", "timestamp": "2026-04-15T05:26:36.621003Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:26:36.622200Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex Thompson, an economic analyst with a keen interest in international trade dynamics. I'm eager to learn more about the trade relationship between India and the USA and its broader impli", "timestamp": "2026-04-15T05:26:36.805435Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:26:36.805435Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex Carter, an analyst interested in understanding the nuances of the economic relationship between the USA and India. Thank you for taking the time to speak with me today. \n\nTo start, cou", "timestamp": "2026-04-15T05:26:37.025916Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2026-04-15T05:26:37.026917Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "impact of recent US tariffs on Indian industries 2023", "timestamp": "2026-04-15T05:26:37.151575Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "recent trade dynamics between India and USA 2023", "timestamp": "2026-04-15T05:26:37.479906Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "recent trends in USA India investment flows by sector", "timestamp": "2026-04-15T05:26:39.572876Z", "level": "info", "event": "Performing Tavily web search"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2026-04-15T05:26:41.337191Z", "level": "info", "event": "Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Li Wei", "timestamp": "2026-04-15T05:26:41.338207Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2026-04-15T05:26:41.398774Z", "level": "info", "event": "Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Priya Nair", "timestamp": "2026-04-15T05:26:41.399775Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2026-04-15T05:26:43.719217Z", "level": "info", "event": "Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Michael Thompson", "timestamp": "2026-04-15T05:26:43.720321Z", "level": "info", "event": "Generating expert answer"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: Recent tariffs imposed by the USA have significantly impacted several Indian industries, particularly those that are heavily reliant on exports to the US. The sectors most affected include tex", "timestamp": "2026-04-15T05:26:45.070918Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2026-04-15T05:26:45.071919Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Priya Nair", "timestamp": "2026-04-15T05:26:45.072919Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: The trade relationship between India and the USA has seen significant developments in recent years, marked by both challenges and opportunities. In 2023, the trade relationship continued to st", "timestamp": "2026-04-15T05:26:46.529415Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2026-04-15T05:26:46.530735Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Li Wei", "timestamp": "2026-04-15T05:26:46.531985Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: The economic relationship between the USA and India, particularly in terms of investment flows, has seen notable developments over the years. From April 2000 to December 2025, the USA accounte", "timestamp": "2026-04-15T05:26:47.446308Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2026-04-15T05:26:47.447315Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Michael Thompson", "timestamp": "2026-04-15T05:26:47.447315Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3562, "timestamp": "2026-04-15T05:26:51.322454Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 4509, "timestamp": "2026-04-15T05:26:55.299558Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 4441, "timestamp": "2026-04-15T05:26:55.697508Z", "level": "info", "event": "Report section generated successfully"}
+{"module": "AutonomousReportGenerator", "topic": "relation between india and USA for tradeoff", "timestamp": "2026-04-15T05:26:55.699509Z", "level": "info", "event": "Generating conclusion"}
+{"module": "AutonomousReportGenerator", "topic": "relation between india and USA for tradeoff", "timestamp": "2026-04-15T05:26:55.699509Z", "level": "info", "event": "Generating introduction"}
+{"module": "AutonomousReportGenerator", "topic": "relation between india and USA for tradeoff", "timestamp": "2026-04-15T05:26:55.700511Z", "level": "info", "event": "Writing report"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 841, "timestamp": "2026-04-15T05:26:57.633752Z", "level": "info", "event": "Introduction generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 1065, "timestamp": "2026-04-15T05:26:58.816941Z", "level": "info", "event": "Conclusion generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:27:04.096526Z", "level": "info", "event": "Report written successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:27:04.097510Z", "level": "info", "event": "Finalizing report compilation"}
+{"module": "AutonomousReportGenerator", "timestamp": "2026-04-15T05:27:04.097510Z", "level": "info", "event": "Report finalized"}
+{"module": "AutonomousReportGenerator", "topic": "relation between india and USA for tradeoff", "format": "docx", "timestamp": "2026-04-15T05:27:04.099510Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\generated_report\\relation_between_india_and_USA_for_tradeoff_20260415_105704\\relation_between_india_and_USA_for_tradeoff_20260415_105704.docx", "timestamp": "2026-04-15T05:27:04.134273Z", "level": "info", "event": "Report saved successfully"}
+{"module": "AutonomousReportGenerator", "topic": "relation between india and USA for tradeoff", "format": "pdf", "timestamp": "2026-04-15T05:27:04.135272Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\generated_report\\relation_between_india_and_USA_for_tradeoff_20260415_105704\\relation_between_india_and_USA_for_tradeoff_20260415_105704.pdf", "timestamp": "2026-04-15T05:27:04.143146Z", "level": "info", "event": "Centered PDF saved successfully"}
+{"module": "AutonomousReportGenerator", "path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\generated_report\\relation_between_india_and_USA_for_tradeoff_20260415_105704\\relation_between_india_and_USA_for_tradeoff_20260415_105704.pdf", "timestamp": "2026-04-15T05:27:04.144563Z", "level": "info", "event": "Report saved successfully"}

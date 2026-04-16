@@ -1,0 +1,58 @@
+{"timestamp": "2026-04-12T11:48:14.634285Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2026-04-12T11:48:14.636286Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-12T11:48:14.637288Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-12T11:48:14.638285Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-12T11:48:14.671815Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-12T11:48:14.673816Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-12T11:48:15.973543Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-12T11:48:16.755637Z", "level": "info", "event": "LLM loaded successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /chat/completions in 22.310000 seconds
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /chat/completions in 36.526000 seconds
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /chat/completions in 0.423563 seconds
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /chat/completions in 0.989443 seconds
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /chat/completions in 0.441797 seconds
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /chat/completions in 0.959417 seconds
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"timestamp": "2026-04-12T12:32:26.293242Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2026-04-12T12:32:26.294330Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-12T12:32:26.295336Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2026-04-12T12:32:26.296606Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "D:\\gen ai projects\\langchain and its projects\\automated-research-report-generation\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-12T12:32:26.299823Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2026-04-12T12:32:26.300842Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-12T12:32:27.025078Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2026-04-12T12:32:27.027078Z", "level": "info", "event": "LLM loaded successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

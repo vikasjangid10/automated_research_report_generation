@@ -12,7 +12,7 @@ def _project_root() -> Path:
     Example:
         /Users/sunny/automated-research-report-generation/research_and_analyst
     """
-    return Path(__file__).resolve().parents[2]
+    return Path(__file__).resolve().parents[1]
 
 
 def load_config(config_path: str | None = None) -> dict:
@@ -22,7 +22,7 @@ def load_config(config_path: str | None = None) -> dict:
     🔹 Priority:
         1. Explicit `config_path` argument (if provided)
         2. CONFIG_PATH environment variable
-        3. Default path: <project_root>/research_and_analysts/config/configuration.yaml
+        3. Default path: <project_root>/config/configuration.yaml
 
     Args:
         config_path (str | None): Optional explicit config file path.
@@ -38,9 +38,7 @@ def load_config(config_path: str | None = None) -> dict:
 
         # Step 1: Resolve effective path
         if config_path is None:
-            config_path = env_path or str(
-                _project_root() / "research_and_analyst" / "config" / "configuration.yaml"
-            )
+            config_path = env_path or str(_project_root() / "config" / "configuration.yaml")
 
         path = Path(config_path)
         if not path.is_absolute():

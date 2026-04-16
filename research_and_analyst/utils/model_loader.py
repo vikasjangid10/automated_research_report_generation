@@ -46,18 +46,6 @@ class ApiKeyManager:
         """
         return self.api_keys.get(key)
 
-    def require(self, key: str) -> str:
-        """
-        Retrieve a required API key and raise a clear error if it is missing.
-        """
-        value = self.get(key)
-        if not value:
-            raise ValueError(
-                f"Required environment variable '{key}' is missing. "
-                "Add it to your environment or .env file."
-            )
-        return value
-
 
 class ModelLoader:
     """
@@ -88,11 +76,7 @@ class ModelLoader:
         """
         try:
             model_name = self.config["embedding_model"]["model_name"]
-            provider = self.config["embedding_model"].get("provider", "google")
             log.info("Loading embedding model", model=model_name)
-
-            if provider != "google":
-                raise ValueError(f"Unsupported embedding provider: {provider}")
 
             # Ensure event loop exists for gRPC-based embedding API
             try:
@@ -102,7 +86,7 @@ class ModelLoader:
 
             embeddings = GoogleGenerativeAIEmbeddings(
                 model=model_name,
-                google_api_key=self.api_key_mgr.require("GOOGLE_API_KEY"),
+                google_api_key=self.api_key_mgr.get("GOOGLE_API_KEY"),
             )
 
             log.info("Embedding model loaded successfully", model=model_name)
@@ -146,7 +130,7 @@ class ModelLoader:
             if provider == "google":
                 llm = ChatGoogleGenerativeAI(
                     model=model_name,
-                    google_api_key=self.api_key_mgr.require("GOOGLE_API_KEY"),
+                    google_api_key=self.api_key_mgr.get("GOOGLE_API_KEY"),
                     temperature=temperature,
                     max_output_tokens=max_tokens,
                 )
@@ -154,14 +138,14 @@ class ModelLoader:
             elif provider == "groq":
                 llm = ChatGroq(
                     model=model_name,
-                    api_key=self.api_key_mgr.require("GROQ_API_KEY"),
+                    api_key=self.api_key_mgr.get("GROQ_API_KEY"),
                     temperature=temperature,
                 )
 
             elif provider == "openai":
                 llm = ChatOpenAI(
                     model=model_name,
-                    api_key=self.api_key_mgr.require("OPENAI_API_KEY"),
+                    api_key=self.api_key_mgr.get("OPENAI_API_KEY"),
                     temperature=temperature,
                 )
 
